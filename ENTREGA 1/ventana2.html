@@ -1,0 +1,178 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+
+<body style="background-color:rgb(47, 37, 114);">
+
+    <div class="fondo">
+        
+        <nav>
+            <div class="navbar3">
+                <div>
+                    <img src="img/logo2.png" class="imagenLogoIZQ">
+                    <img src="img/logoED.png" class="imagenLogoDCH">
+                </div>
+                <div>   
+                    <h1 class="sinMargen" style="color: yellow;background-color: rgb(47, 37, 114); text-align: center; font-size: 250%; margin: 0;">VENTA DE NEUMATICOS</h1>
+                </div>
+            </div>
+        </nav>
+
+        <div style="background-color: yellow; margin: 0; height: 40px; line-height: 40px; display: flex; align-items: center;">
+            <a href="ventana1.html"><button style="background-color: rgb(47, 37, 114); color:white; width: 70px; height: 20px;" class="boton">VOLVER</button></a>
+            
+            <div style="flex-grow: 1; text-align: center;">
+                <p style="margin: 0;"><strong>NEUMATICOS DISPONIBLES</strong></p>
+            </div>
+        </div>
+        
+        <!-- Filtro de tipo de vehículo -->
+        <div style="text-align: center; margin: 20px;">
+            <select id="filtro-vehiculo" onchange="mostrarNeumaticos()">
+                <option value="todos">Selecciona un tipo de vehículo</option>
+                <option value="coches">Coches</option>
+                <option value="obraPublica">Obra pública</option>
+                <option value="vehiculosComerciales">Vehículos comerciales</option>
+            </select>
+        </div>
+
+        <!-- Contenido dinámico que se mostrará según la selección del filtro -->
+        <div id="coches" class="vehiculo-info" style="display: none;">
+            <div style="height: 400px; background-color: rgb(47, 37, 114); display: flex; justify-content: center; gap: 150px;">
+                <div class="columnas">
+                    <h2 style="text-align: center;">Coches</h2>
+                    <hr class="linea">
+                    <ul>
+                        <li>CARACTERISTICAS</li>
+                            <ul>
+                                <li>Composición de goma optimizada</li>
+                                <li>Tecnología de eficiencia de combustible</li>
+                                <li>Refuerzo de las paredes laterales</li>
+                            </ul></br>
+
+                        <li>TAMAÑOS</li>
+                            <ul>
+                                <li>Los tamaños disponibles son de 14 a 22 pulgadas</li>
+                            </ul></br>
+
+                        <li>PRECIO</li>
+                            <ul>
+                                <li>14-16 pulgadas: 50 € a 100 €</li>
+                                <li>17-18 pulgadas: 100 € a 150 €</li>
+                                <li>19-20 pulgadas: 150 € a 250 €</li>
+                                <li>21-22 pulgadas: 200 € a 350 €</li>
+                            </ul></br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="obraPublica" class="vehiculo-info" style="display: none;">
+            <div style="height: 400px; background-color: rgb(47, 37, 114); display: flex; justify-content: center; gap: 150px;">
+                <div class="columnas">
+                    <h2 style="text-align: center;">Obra pública</h2>
+                    <hr class="linea">
+                    <ul>
+                        <li>CARACTERISTICAS</li>
+                            <ul>
+                                <li>Resistencia a la abrasión</li>
+                                <li>Tecnología para mayor durabilidad</li>
+                                <li>Compensación por las cargas pesadas</li>
+                            </ul></br>
+
+                        <li>TAMAÑOS</li>
+                            <ul>
+                                <li>Los tamaños disponibles varían de 24 a 40 pulgadas</li>
+                            </ul></br>
+
+                        <li>PRECIO</li>
+                            <ul>
+                                <li>24-26 pulgadas: 19.000 € a 20.000 €</li>
+                                <li>27-30 pulgadas: 21.000 € a 23.000 €</li>
+                                <li>31-35 pulgadas: 24.000 € a 27.000 €</li>
+                                <li>36-40 pulgadas: 28.000 € a 31.000 €</li>
+                                <li>41-63 pulgadas: 32.000 € a 50.000 €</li>
+                            </ul></br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="vehiculosComerciales" class="vehiculo-info" style="display: none;">
+            <div style="height: 400px; background-color: rgb(47, 37, 114); display: flex; justify-content: center; gap: 150px;">
+                <div class="columnas">
+                    <h2 style="text-align: center;">Vehículos comerciales</h2>
+                    <hr class="linea">
+                    <ul>
+                        <li>CARACTERISTICAS</li>
+                            <ul>
+                                <li>Mayor capacidad de carga</li>
+                                <li>Diseño resistente para condiciones extremas</li>
+                                <li>Longevidad optimizada para viajes largos</li>
+                            </ul></br>
+
+                        <li>TAMAÑOS</li>
+                            <ul>
+                                <li>Los tamaños disponibles varían de 16 a 63 pulgadas</li>
+                            </ul></br>
+
+                        <li>PRECIO</li>
+                            <ul>
+                                <li>16-18 pulgadas: 12.000 € a 14.000 €</li>
+                                <li>19-22 pulgadas: 15.000 € a 17.500 €</li>
+                                <li>23-26 pulgadas: 18.000 € a 20.000 €</li>
+                                <li>27-30 pulgadas: 21.000 € a 23.500 €</li>
+                                <li>31-63 pulgadas: 24.500 € a 50.000 €</li>
+                            </ul></br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor para las imágenes que solo se mostrarán al seleccionar un vehículo -->
+        <div id="imagenes" style="display: none; position: fixed; top: 50%; right: 10px; transform: translateY(-50%);">
+            <img src="img/coche.png" id="imgCoches" style="width: 250px; display: none; margin-bottom: 20px;">
+            <img src="img/obra_publica.png" id="imgObraPublica" style="width: 250px; display: none; margin-bottom: 20px;">
+            <img src="img/vehiculo_comercial.png" id="imgVehiculosComerciales" style="width: 250px; display: none;">
+        </div>
+
+    </div>
+
+    <script>
+        function mostrarNeumaticos() {
+            // Obtener el valor del filtro seleccionado
+            var tipoVehiculo = document.getElementById("filtro-vehiculo").value;
+
+            // Ocultar todas las secciones de vehículos
+            var vehiculos = document.getElementsByClassName("vehiculo-info");
+            for (var i = 0; i < vehiculos.length; i++) {
+                vehiculos[i].style.display = "none";
+            }
+
+            // Ocultar todas las imágenes
+            document.getElementById("imgCoches").style.display = "none";
+            document.getElementById("imgObraPublica").style.display = "none";
+            document.getElementById("imgVehiculosComerciales").style.display = "none";
+
+            // Mostrar la sección correspondiente y la imagen relacionada
+            if (tipoVehiculo === "coches") {
+                document.getElementById("coches").style.display = "block";
+                document.getElementById("imgCoches").style.display = "block";
+            } else if (tipoVehiculo === "obraPublica") {
+                document.getElementById("obraPublica").style.display = "block";
+                document.getElementById("imgObraPublica").style.display = "block";
+            } else if (tipoVehiculo === "vehiculosComerciales") {
+                document.getElementById("vehiculosComerciales").style.display = "block";
+                document.getElementById("imgVehiculosComerciales").style.display = "block";
+            }
+            
+            // Mostrar el contenedor de imágenes
+            document.getElementById("imagenes").style.display = tipoVehiculo === "todos" ? "none" : "block";
+        }
+    </script>
+
+</body>
+
+</html>

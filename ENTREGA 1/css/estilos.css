@@ -1,6 +1,6 @@
 .fondo
 {
-    height: 100%;
+    height: 100px;
 }
 
 .navbar
@@ -9,13 +9,22 @@
     background-color: rgb(47, 37, 114);
     font-weight: bold;
     height: 280px;
+    justify-content: space-between;
 }
 
-.imagenLogo
+.imagenLogoDCH
+{   
+    width: 250px;
+    height: 100px;
+    margin-left: 1000;
+    top: 1000;
+}
+
+.imagenLogoIZQ
 {
     width: 250px;
     height: 100px;
-    left: 0;
+    left: 0;    
     margin: 0;
 }
 
@@ -28,6 +37,7 @@
     height: 80px;
     justify-content: center;
     gap: 150px;
+    margin: 10;
     
 }
 
@@ -37,19 +47,22 @@
     border-radius: 25px;
     height: 50px;
     width: 100px;
+    margin: 5;
 }
 
 .imgFondo
 {
     display: flex;
     margin: 0;  
+    height: 50px;
+    object-fit: contain;
 }
 
 .formulario
 {
     display: flex;
-    left: 10%;
-    top: 20%;
+    left: 15%;
+    top: 30%;
     width: 250px;
     position: absolute;
     background-color: rgb(47, 37, 114);
@@ -65,10 +78,10 @@
 {
     position: relative;
     width: 100%;
-    height: 100vh; 
-    background-image: url("tu-imagen.jpg"); 
     background-size: cover;
     background-position: center;
+    height: 500px;
+    background-color: rgb(47, 37, 114);
 }
 
 .linea 
@@ -79,3 +92,67 @@
     border: none;   
     margin:0;
 }
+
+.tv1i
+{
+    position: absolute; /* Posicionamos el texto fuera del flujo normal */
+    top: 50%; /* Centrado verticalmente */
+    left: 0; /* Colocado en el lado izquierdo */
+    transform: translateY(-50%); /* Centrado exacto */
+    writing-mode: vertical-rl; /* Texto en vertical */
+    color: white; /* Color del texto */
+    font-weight: bold; /* Estilo negrita */
+    font-size: 20px; /* Tamaño del texto */
+    width: 70px;
+}
+
+.navbar3
+{
+    margin: 0;
+    background-color: rgb(47, 37, 114);
+    font-weight: bold;
+    height: 160px;
+    justify-content: space-between;
+
+}
+
+.botonVolver {
+    display: flex;
+    left: 0;
+    margin: 10;
+}
+
+.tv2i
+{
+    position: absolute; 
+    top: 50%;
+    left: 0; 
+    transform: translateY(-50%); 
+    writing-mode: vertical-rl;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 70px;
+}
+
+.navbar4
+{
+    margin: 0;
+    background-color: rgb(47, 37, 114);
+    font-weight: bold;
+    height: 200px;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 575px;
+}
+
+    .columnas
+    {
+        margin: 15;
+        background-color: rgb(205, 205, 205);
+        color: black;
+        border-radius: 20px;
+        height: 370px;
+        width: 1000px;
+    }
+
