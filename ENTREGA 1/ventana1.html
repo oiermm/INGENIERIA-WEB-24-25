@@ -1,26 +1,32 @@
 <html>
 
 <head>
+    <!-- Enlace al archivo de estilos CSS -->
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 
 <body>
 
     <div>
+        <!-- Barra de navegación principal -->
         <nav class="navbar3">
             <div style="justify-content: space-between;">
+                <!-- Logotipos a la izquierda y derecha -->
                 <img src="img/logo2.png" class="imagenLogoIZQ">
                 <img src="img/logoED.png" class="imagenLogoDCH">
             </div>
             <div>
-                <h1 style="color: yellow;background-color: rgb(52, 81, 186) ;align-items: center; text-align: center; font-size: 250%; margin: 0; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                <!-- Título principal -->
+                <h1
+                    style="color: yellow; background-color: rgb(52, 81, 186); align-items: center; text-align: center; font-size: 250%; margin: 0; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                     MICHELIN
                 </h1>
+                <!-- Lema de la empresa -->
                 <p style="color: yellow; text-align: center;"><strong>LA MEJOR MANERA DE AVANZAR</strong></p>
-
             </div>
         </nav>
 
+        <!-- Botones de navegación -->
         <div class="botones" style="margin: 0; width: 100%;">
             <a href="ventana2.html"><button style="background-color: rgb(52, 81, 186); color: white;"
                     class="boton">RUEDAS</button></a>
@@ -30,61 +36,76 @@
                     class="boton">FABRICAS</button></a>
         </div>
 
+        <!-- Segunda barra de navegación -->
         <nav class="navbar2">
-            <!-- Imagen que ocupa todo el ancho -->
+            <!-- Imagen de fondo que ocupa todo el ancho -->
             <img src="img/fondo1.jpg" class="imgFondo" style="width: 100%; height: 500px; object-fit: cover;">
-        
-            <!-- Formulario debajo de la imagen -->
-            <form action="" method="post" class="formulario" style="display: flex; flex-direction: column; width: 100%; align-items: center; padding: 20px;">
-                <!-- P centrado arriba -->
-                <p style="margin-bottom: 20px; text-align: center; font-size: 16px;"><strong>INTRODUZCA SU CORREO PARA NO PERDERSE NINGUNA OFERTA</strong></p>
+
+            <!-- Formulario de suscripción a ofertas -->
+            <form action="" method="post" class="formulario"
+                style="display: flex; flex-direction: column; width: 100%; align-items: center; padding: 20px;">
+                <!-- Texto de introducción -->
+                <p style="margin-bottom: 20px; text-align: center; font-size: 16px;"><strong>INTRODUZCA SU CORREO PARA
+                        NO PERDERSE NINGUNA OFERTA</strong></p>
                 <hr class="linea" style="width: 100%; margin: 10px 0;">
-                
-                <!-- Elementos en línea (input, select y botón) -->
+
+                <!-- Campos del formulario -->
                 <div style="display: flex; flex-direction: row; width: 100%; justify-content: center; gap: 10px;">
-                    <input style="text-align: center; padding: 10px; width: 30%; border-radius: 5px;" id="campo-correo" type="email" name="correo" placeholder="Escribe tu correo" required>
-                    <select id="comunidades" name="comunidades" style="padding: 10px; width: 30%; border-radius: 5px;" required>
+                    <!-- Campo de entrada para el correo -->
+                    <input style="text-align: center; padding: 10px; width: 30%; border-radius: 5px;" id="campo-correo"
+                        type="email" name="correo" placeholder="Escribe tu correo" required>
+
+                    <!-- Lista desplegable de comunidades -->
+                    <select id="comunidades" name="comunidades" style="padding: 10px; width: 30%; border-radius: 5px;"
+                        required>
                         <option value="" disabled selected>Seleccione una opción</option>
-                         <option value="andalucia">Andalucía</option>
-                         <option value="aragon">Aragón</option>
-                         <option value="asturias">Asturias</option>
-                         <option value="baleares">Islas Baleares</option>
-                         <option value="canarias">Canarias</option>
-                         <option value="cantabria">Cantabria</option>
-                         <option value="castilla-la-mancha">Castilla-La Mancha</option>
-                         <option value="castilla-y-leon">Castilla y León</option>
-                         <option value="cataluna">Cataluña</option>
-                         <option value="extremadura">Extremadura</option>
-                         <option value="galicia">Galicia</option>
-                         <option value="madrid">Madrid</option>
-                         <option value="murcia">Región de Murcia</option>
-                         <option value="navarra">Navarra</option>
-                         <option value="la-rioja">La Rioja</option>
-                         <option value="pais-vasco">País Vasco</option>
-                         <option value="valencia">Comunidad Valenciana</option>
-                         <option value="ceuta">Ceuta</option>
-                         <option value="melilla">Melilla</option>
+                        <option value="andalucia">Andalucía</option>
+                        <option value="aragon">Aragón</option>
+                        <option value="asturias">Asturias</option>
+                        <option value="baleares">Islas Baleares</option>
+                        <option value="canarias">Canarias</option>
+                        <option value="cantabria">Cantabria</option>
+                        <option value="castilla-la-mancha">Castilla-La Mancha</option>
+                        <option value="castilla-y-leon">Castilla y León</option>
+                        <option value="cataluna">Cataluña</option>
+                        <option value="extremadura">Extremadura</option>
+                        <option value="galicia">Galicia</option>
+                        <option value="madrid">Madrid</option>
+                        <option value="murcia">Región de Murcia</option>
+                        <option value="navarra">Navarra</option>
+                        <option value="la-rioja">La Rioja</option>
+                        <option value="pais-vasco">País Vasco</option>
+                        <option value="valencia">Comunidad Valenciana</option>
+                        <option value="ceuta">Ceuta</option>
+                        <option value="melilla">Melilla</option>
                     </select>
-                    <button type="submit" class="btn-enviar" style="padding: 10px 20px; background-color: yellow; color: black; border-radius: 5px; font-weight: bold;" >Enviar</button>
+
+                    <!-- Botón de envío -->
+                    <button type="submit" class="btn-enviar"
+                        style="padding: 10px 20px; background-color: yellow; color: black; border-radius: 5px; font-weight: bold;">Enviar</button>
                 </div>
             </form>
-        </nav>        
-        
+        </nav>
 
     </div>
 
-    <footer style="background-color: white; width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; position: relative;">
-        <div style="display: flex; justify-content: space-between; align-items: center; width: 80%; text-align: center;">
+    <!-- Pie de página -->
+    <footer
+        style="background-color: white; width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; position: relative;">
+        <div
+            style="display: flex; justify-content: space-between; align-items: center; width: 80%; text-align: center;">
+            <!-- Mensaje a la izquierda -->
             <h2 style="color: rgb(52, 81, 186); margin: 0; flex: 1; text-align: left;">
                 En Michelin fabricamos el futuro
             </h2>
+            <!-- Logo en el centro -->
             <img src="img/logo.png" style="height: 300px; width: auto; margin: 0 20px;">
+            <!-- Mensaje a la derecha -->
             <h2 style="color: rgb(52, 81, 186); margin: 0; flex: 1; text-align: right;">
                 La mejor manera de avanzar
             </h2>
         </div>
     </footer>
-
 
 </body>
 
