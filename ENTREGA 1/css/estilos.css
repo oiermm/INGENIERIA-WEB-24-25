@@ -60,11 +60,12 @@ footer {
     display: flex;
     align-items: center;
     text-align: center;
-    background-color: yellow;
-    height: 80px;
+    background-color: rgb(198, 198, 198);
+    height: 60px;
     justify-content: center;
     gap: 150px;
     margin: 10;
+    border-color: white;
     
 }
 
@@ -72,7 +73,7 @@ footer {
 {
     font-weight: bold;
     border-radius: 25px;
-    height: 50px;
+    height: 40px;
     width: 100px;
     margin: 5;
 }
@@ -85,30 +86,11 @@ footer {
     object-fit: contain;
 }
 
-.formulario
-{
-    display: flex;
-    left: 15%;
-    top: 30%;
-    width: 250px;
-    position: absolute;
-    background-color: rgb(47, 37, 114);
-    color: rgb(255, 234, 0);
-    border-radius: 25px;
-    justify-content: center;
-    flex-direction: column;
-    border-color: white;
-    align-items: center;
-}
-
 .navbar2    
 {
-    position: relative;
     width: 100%;
-    background-size: cover;
-    background-position: center;
-    height: 600px;
-    background-color: rgb(52, 81, 186);
+    height: 650px;
+    background-color: white;
 }
 
 .linea 

@@ -7,22 +7,24 @@
 <body style="background-color:white;">
 
     <div class="fondo">
-        <nav class="navbar3">
-            <div style="justify-content: space-between;">
+        <header class="navbar3" style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+            <div style="display: flex; justify-content: space-between; width: 100%; padding: 10px 20px;">
+                <!-- Logos de la empresa -->
                 <img src="img/logo2.png" class="imagenLogoIZQ">
                 <img src="img/logoED.png" class="imagenLogoDCH">
             </div>
-            <div>
-                <h1
-                    style="color: yellow;background-color: rgb(52, 81, 186);align-items: center; text-align: center; font-size: 250%; margin: 0;">
-                    VENTA DE NEUMATICOS</h1>
+            <div style="width: 100%;">
+                <!-- Título principal -->
+                <h1 style="color: yellow; background-color: rgb(52, 81, 186); text-align: center; font-size: 250%; 
+                           margin: 0; padding: 10px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    VENTA DE NEUMATICOS
+                </h1>
             </div>
-        </nav>
+        </header>
 
-        <div style="background-color: yellow; height: 40px; display: flex; align-items: center;">
-            <a href="ventana1.html"><button
-                    style="background-color: rgb(52, 81, 186); color:white; width: 70px; height: 20px; margin-left: 5;">VOLVER</button></a>
-            <div style="flex-grow: 1; text-align: center;">
+        <div style="background-color: rgb(198, 198, 198); height: 40px; display: flex; align-items: center; margin-top: 20PX;">
+            <a href="ventana1.html"><button style="background-color: rgb(52, 81, 186); color:white; width: 70px; height: 20px; margin-left: 5; border-radius: 50px;">VOLVER</button></a>
+                <div style="flex-grow: 1; text-align: center;">
                 <p style="margin: 0;"><strong>NEUMATICOS DISPONIBLES</strong></p>
             </div>
         </div>
@@ -192,16 +194,18 @@
         }
     </script>
 
-    <nav
-        style="background-color: white; width: 100%; height: 300px; display: flex; justify-content: center; align-items: center;">
-        <div
-            style="display: flex; justify-content: space-between; align-items: center; width: 80%; text-align: center;">
-            <h2 style="color: rgb(52, 81, 186); margin: 0; flex: 1; text-align: left;">En Michelin fabricamos el futuro
+    <footer style="background-color: white; width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; position: relative;">
+        <div style="display: flex; justify-content: space-between; align-items: center; width: 80%; text-align: center;">
+            <h2 style="color: rgb(52, 81, 186); margin: 0; flex: 1; text-align: left;">
+                En Michelin fabricamos el futuro
             </h2>
             <img src="img/logo.png" style="height: 300px; width: auto; margin: 0 20px;">
-            <h2 style="color: rgb(52, 81, 186); margin: 0; flex: 1; text-align: right;">La mejor manera de avanzar</h2>
+            <h2 style="color: rgb(52, 81, 186); margin: 0; flex: 1; text-align: right;">
+                La mejor manera de avanzar
+            </h2>
         </div>
-    </nav>
+    </footer>
+
 </body>
 
 </html>

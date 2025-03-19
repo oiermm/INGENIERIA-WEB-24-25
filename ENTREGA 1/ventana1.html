@@ -13,54 +13,75 @@
                 <img src="img/logoED.png" class="imagenLogoDCH">
             </div>
             <div>
-                <h1
-                    style="color: yellow;background-color: rgb(52, 81, 186);align-items: center; text-align: center; font-size: 250%; margin: 0;">
-                    MICHELIN</h1>
+                <h1 style="color: yellow;background-color: rgb(52, 81, 186);align-items: center; text-align: center; font-size: 250%; margin: 0; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                    MICHELIN
+                </h1>
             </div>
         </nav>
 
         <div class="botones" style="margin: 0; width: 100%;">
-            <a href="ventana2.html"><button style="background-color: rgb(47, 37, 114); color: white;"
+            <a href="ventana2.html"><button style="background-color: rgb(52, 81, 186); color: white;"
                     class="boton">RUEDAS</button></a>
-            <a href="ventana3.html"><button style="background-color: rgb(47, 37, 114); color: white;"
+            <a href="ventana3.html"><button style="background-color: rgb(52, 81, 186); color: white;"
                     class="boton">BLOG</button></a>
-            <a href="ventana4.html"><button style="background-color: rgb(47, 37, 114); color: white;"
+            <a href="ventana4.html"><button style="background-color: rgb(52, 81, 186); color: white;"
                     class="boton">FABRICAS</button></a>
         </div>
 
         <nav class="navbar2">
-            <img src="img/fondo1.jpg" class="imgFondo" style="width: 100%; height: 495px;">
-            
-            <form action="" method="post" class="formulario">
-                <p style="margin-bottom: 20px; margin: 5; text-align: center;"><strong>INTRODUZCA SU CORREO PARA NO PERDERSE NINGUNA OFERTA</strong></p>
-                <hr class="linea">
-                <input style="margin: 10; text-align: center;" id="campo-correo" type="email" name="correo" placeholder="Escribe tu correo" required>
-                <select id="comunidades" name="comunidades" style="margin: 5; text-align: center;" required>
-                    <option value="" disabled selected>Seleccione una opción</option>
-                    <option value="andalucia">Andalucía</option>
-                    <!-- Otras opciones aquí -->
-                </select>
-                <button type="submit" class="btn-enviar" style="width: 60px; margin: 0; align-items: center; background-color: yellow; color: black; justify-content: center;"><strong>Enviar</strong></button></br>
-            </form>
+            <!-- Imagen que ocupa todo el ancho -->
+            <img src="img/fondo1.jpg" class="imgFondo" style="width: 100%; height: 500px; object-fit: cover;">
         
-            <div class="tv1i" style="position: absolute; left: 50%; transform: translateX(-50%); bottom: 20px; text-align: center;">
-                <h2 style="display: inline-block; color: white; font-weight: bold; font-size: 15px;">INGENIERÍA WEB</h2>
-            </div>
-        </nav>
+            <!-- Formulario debajo de la imagen -->
+            <form action="" method="post" class="formulario" style="display: flex; flex-direction: column; width: 100%; align-items: center; padding: 20px;">
+                <!-- P centrado arriba -->
+                <p style="margin-bottom: 20px; text-align: center; font-size: 16px;"><strong>INTRODUZCA SU CORREO PARA NO PERDERSE NINGUNA OFERTA</strong></p>
+                <hr class="linea" style="width: 100%; margin: 10px 0;">
+                
+                <!-- Elementos en línea (input, select y botón) -->
+                <div style="display: flex; flex-direction: row; width: 100%; justify-content: center; gap: 10px;">
+                    <input style="text-align: center; padding: 10px; width: 30%; border-radius: 5px;" id="campo-correo" type="email" name="correo" placeholder="Escribe tu correo" required>
+                    <select id="comunidades" name="comunidades" style="padding: 10px; width: 30%; border-radius: 5px;" required>
+                        <option value="" disabled selected>Seleccione una opción</option>
+                         <option value="andalucia">Andalucía</option>
+                         <option value="aragon">Aragón</option>
+                         <option value="asturias">Asturias</option>
+                         <option value="baleares">Islas Baleares</option>
+                         <option value="canarias">Canarias</option>
+                         <option value="cantabria">Cantabria</option>
+                         <option value="castilla-la-mancha">Castilla-La Mancha</option>
+                         <option value="castilla-y-leon">Castilla y León</option>
+                         <option value="cataluna">Cataluña</option>
+                         <option value="extremadura">Extremadura</option>
+                         <option value="galicia">Galicia</option>
+                         <option value="madrid">Madrid</option>
+                         <option value="murcia">Región de Murcia</option>
+                         <option value="navarra">Navarra</option>
+                         <option value="la-rioja">La Rioja</option>
+                         <option value="pais-vasco">País Vasco</option>
+                         <option value="valencia">Comunidad Valenciana</option>
+                         <option value="ceuta">Ceuta</option>
+                         <option value="melilla">Melilla</option>
+                    </select>
+                    <button type="submit" class="btn-enviar" style="padding: 10px 20px; background-color: yellow; color: black; border-radius: 5px; font-weight: bold;">Enviar</button>
+                </div>
+            </form>
+        </nav>        
         
 
     </div>
 
-    <nav
-        style="background-color: white; width: 100%; height: 300px; display: flex; justify-content: center; align-items: center;">
-        <div
-            style="display: flex; justify-content: space-between; align-items: center; width: 80%; text-align: center;">
-            <h2 style="color: rgb(52, 81, 186); margin: 0; flex: 1; text-align: left;">En Michelin fabricamos el futuro
+    <footer style="background-color: white; width: 100%; height: 300px; display: flex; justify-content: center; align-items: center; position: relative;">
+        <div style="display: flex; justify-content: space-between; align-items: center; width: 80%; text-align: center;">
+            <h2 style="color: rgb(52, 81, 186); margin: 0; flex: 1; text-align: left;">
+                En Michelin fabricamos el futuro
             </h2>
             <img src="img/logo.png" style="height: 300px; width: auto; margin: 0 20px;">
-            <h2 style="color: rgb(52, 81, 186); margin: 0; flex: 1; text-align: right;">La mejor manera de avanzar</h2>
+            <h2 style="color: rgb(52, 81, 186); margin: 0; flex: 1; text-align: right;">
+                La mejor manera de avanzar
+            </h2>
         </div>
-    </nav>
+    </footer>
 
 
 </body>
