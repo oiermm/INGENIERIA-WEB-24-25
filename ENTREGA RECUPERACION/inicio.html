@@ -1,0 +1,148 @@
+<html>
+
+<head>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header style="position: relative;">
+
+        <div>
+            <img src="img/banner2.jpg" style="width: 100%; height: 230px; display: block;">
+        </div>      
+    
+        <div style="position: absolute; top: 5%; left: 36%; color: white; text-align: center;">
+            <h1 style="font-size: 3em;">TechRevolution</h1>
+            <p>Innovación tecnológica para un futuro mejor</p>
+        </div>
+    
+        <div style="position: absolute; top: 80%; left: 28%; display: flex; justify-content: center; align-items: center; gap: 50px;">
+            <a href="servicios.html">
+                <button style="color: white; background-color: #007bff; padding: 10px 20px; border-radius: 5px; border: none; width: 150px;">SERVICIOS</button>
+            </a>
+            <a href="proyectos.html">
+                <button style="color: white; background-color: #007bff; padding: 10px 20px; border-radius: 5px; border: none; width: 150px;">PROYECTOS</button>
+            </a>
+            <a href="historia.html">
+                <button style="color: white; background-color: #007bff; padding: 10px 20px; border-radius: 5px; border: none; width: 150px;">HISTORIA</button>
+            </a>
+        </div>        
+    
+    </header>  
+
+    <nav style="height: 350px; display: flex; gap: 150px; align-items: center; justify-content: center;">
+        <div style="text-align: center;">
+            <h2><strong>Ubicacion</strong></h2>
+            <p>C/ de Segismundo Moret, 4, Casco Antiguo, 50001 Zaragoza</p>
+            <a href="https://maps.app.goo.gl/6F7nAPKxhxyueQPN7" target="_blank">
+                Ver ubicación en Google Maps
+            </a>
+
+
+        </div>
+        <div>
+            <img src="img/MAPA_EMPRESA.png" style="height: 250px;">
+        </div>
+    </nav>
+
+
+    <nav style="display: flex; flex-direction: column;background-color: rgb(1, 107, 168);color: white;height: 300;">
+        <div>
+            <h2 style="text-align: center; margin-top: 20;">
+                SERVICOS DISPONIBLES
+            </h2>
+        </div>
+        <div class="tabla_servicios">
+            <table style="color: white; text-align: center;">
+                <tr>
+                    <th>Servicio</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>Desarrollo de Software</td>
+                    <td>Soluciones web, móviles y sistemas a medida.</td>
+                </tr>
+                <tr>
+                    <td>Infraestructura IT</td>
+                    <td>Redes, servidores y migración a la nube.</td>
+                </tr>
+                <tr>
+                    <td>Industria 4.0</td>
+                    <td>IoT, sensórica y control de procesos.</td>
+                </tr>
+                <tr>
+                    <td>Ciberseguridad</td>
+                    <td>Protección de datos y sistemas seguros.</td>
+                </tr>
+            </table>
+
+        </div>
+    </nav>
+
+    <nav style="height: 200px; align-items: center;">
+        <div style="text-align: center;">
+            <h2>Horario Semanal</h2>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <table>
+                <tr>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sábado</th>
+                    <th>Domingo</th>
+                </tr>
+                <tr>
+                    <td>9:00 - 13:00</td>
+                    <td>9:00 - 13:00</td>
+                    <td>9:00 - 13:00</td>
+                    <td>9:00 - 13:00</td>
+                    <td>9:00 - 13:00</td>
+                    <td style="color: red;">Cerrado</td>
+                    <td style="color: red;">Cerrado</td>
+                </tr>
+                <tr>
+                    <td>15:00 - 19:00</td>
+                    <td>15:00 - 19:00</td>
+                    <td>15:00 - 19:00</td>
+                    <td>15:00 - 19:00</td>
+                    <td>15:00 - 19:00</td>
+                    <td style="color: red;">Cerrado</td>
+                    <td style="color: red;">Cerrado</td>
+                </tr>
+            </table>
+        </div>
+    </nav>
+
+    <!-- Formulario envuelto en etiqueta form -->
+    <footer class="footer_inicio">
+        <div class="div_footer">
+            <div style="color: white; display: flex; align-items: center; justify-content: center;">
+                <h2>¡Suscríbete para recibir nuestras ofertas!</h2>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 15px; color: white;">
+                <p>Benefíciate antes que nadie de nuestras promociones. Entérate de todas las novedades</p>
+                <!-- Etiqueta form agregada aquí -->
+            </div>
+            <div>
+                <form>
+                    <div
+                        style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 20px;">
+                        <input type="text" placeholder="Nombre y apellidos" class="relleno_formulario" required>
+                        <input type="email" placeholder="Correo electrónico" class="relleno_formulario" required>
+                        <button type="submit"
+                            style="padding: 10px 20px; border: none; border-radius: 5px; background-color: #fff; color: #3498db; cursor: pointer;">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+    </footer>
+
+</body>
+
+</html>

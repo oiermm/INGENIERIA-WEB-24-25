@@ -1,0 +1,56 @@
+.div_footer
+{
+    background-color: rgb(1, 107, 168); 
+    width: autopx; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    margin: auto;
+    height: 200px;
+}
+
+.relleno_formulario
+{
+    padding: 10px; 
+    border-radius: 5px; 
+    border: none; 
+    width: 200px;
+}
+
+table {
+    border-collapse: separate; 
+    border-spacing: 15px;
+}
+
+.titulo
+{
+    text-align: center; 
+    background-color: rgb(1, 107, 168); 
+    color: white; 
+    margin-top: 0;
+    height: 100px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.tabla_servicios
+{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 10; 
+    color: white;
+}
+
+.selector
+{
+    background-color: #007bff;
+    color: white;
+    height: 30px; 
+    width: 1000px;    
+    border-radius: 25px; 
+    text-align: center;
+}
