@@ -1,0 +1,155 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+
+<body>
+
+    <header style="position: relative;">
+        <div>
+            <img src="img/banner2.jpg" style="width: 100%; height: 230px; display: block;">
+        </div>
+
+        <div style="position: absolute; top: 5%; left: 36%; color: white; text-align: center;">
+            <h1 style="font-size: 3em;">TechRevolution</h1>
+            <p>Innovación tecnológica para un futuro mejor</p>
+        </div>
+
+        <div
+            style="position: absolute; top: 80%; left: 28%; display: flex; justify-content: center; align-items: center; gap: 50px;">
+            <a href="inicio.html">
+                <button
+                    style="color: white; background-color: #007bff; padding: 10px 20px; border-radius: 5px; border: none; width: 150px;">INICIO</button>
+            </a>
+            <a href="proyectos.html">
+                <button
+                    style="color: white; background-color: #007bff; padding: 10px 20px; border-radius: 5px; border: none; width: 150px;">PROYECTOS</button>
+            </a>
+            <a href="historia.html">
+                <button
+                    style="color: white; background-color: #007bff; padding: 10px 20px; border-radius: 5px; border: none; width: 150px;">HISTORIA</button>
+            </a>
+        </div>
+    </header>
+
+    <nav>
+        <h1 style="text-align: center;">SERVICIOS DISPONIBLES</h1>
+
+        <div
+            style="width: 400px; margin: 20px auto; background-color: rgb(1, 107, 168); border-radius: 25px; padding: 20px;">
+            <h3 style="color: white; text-align: center;">DESARROLLO SOFTWARE</h3>
+            <p style="color: white; text-align: justify;">
+                Ofrecemos soluciones de desarrollo de software a medida para empresas de todos los tamaños. Ya sea que
+                necesites una aplicación web o una solución personalizada, nuestro equipo se adapta a tus necesidades
+                para mejorar la eficiencia de tu negocio.
+            </p>
+        </div>
+
+        <div
+            style="width: 400px; margin: 20px auto; background-color: rgb(1, 107, 168); border-radius: 25px; padding: 20px;">
+            <h3 style="color: white; text-align: center;">AUTOMATIZACIÓN INDUSTRIAL</h3>
+            <p style="color: white; text-align: justify;">
+                Implementamos sistemas de automatización para mejorar la eficiencia de los procesos industriales.
+                Nuestros servicios incluyen la integración de sistemas de control y supervisión en tiempo real,
+                adaptados a las necesidades de tu planta de producción.
+            </p>
+        </div>
+
+        <div
+            style="width: 400px; margin: 20px auto; background-color: rgb(1, 107, 168); border-radius: 25px; padding: 20px;">
+            <h3 style="color: white; text-align: center;">CIBERSEGURIDAD EMPRESARIAL</h3>
+            <p style="color: white; text-align: justify;">
+                Proporcionamos soluciones de ciberseguridad para proteger la infraestructura tecnológica de tu empresa.
+                Esto incluye desde auditorías de seguridad hasta la implementación de sistemas de protección avanzados
+                contra amenazas cibernéticas.
+            </p>
+        </div>
+
+        <div
+            style="width: 400px; margin: 20px auto; background-color: rgb(1, 107, 168); border-radius: 25px; padding: 20px;">
+            <h3 style="color: white; text-align: center;">ANÁLISIS DE DATOS Y BIG DATA</h3>
+            <p style="color: white; text-align: justify;">
+                Nuestro servicio de análisis de datos y Big Data te permite obtener información valiosa de grandes
+                volúmenes de datos. Utilizamos herramientas avanzadas para ofrecerte insights que ayuden en la toma de
+                decisiones estratégicas y operacionales.
+            </p>
+        </div>
+
+        <div
+            style="width: 400px; margin: 20px auto; background-color: rgb(1, 107, 168); border-radius: 25px; padding: 20px;">
+            <h3 style="color: white; text-align: center;">DESARROLLO DE INTELIGENCIA ARTIFICIAL</h3>
+            <p style="color: white; text-align: justify;">
+                Desarrollamos soluciones de inteligencia artificial personalizadas para automatizar procesos, mejorar la
+                toma de decisiones y optimizar el rendimiento de tus sistemas. Creamos modelos predictivos y sistemas
+                inteligentes adaptados a tus necesidades.
+            </p>
+        </div>
+    </nav>
+
+
+
+    <hr style="width: 100%; height: 2px; background-color: black; border: none;">
+
+
+    <nav style="background-color: white; margin: 20px; align-items: center; 
+                display: flex; flex-direction: column;">
+        <div style="text-align: center;">
+            <h1>SOLICITUD DE SERVICIOS</h1>
+        </div>
+        <div class="solicitudServicios">
+            <form class="formulario">
+                <select class="selector" required>
+                    <option value="" disabled selected hidden>SELECCIONA UNO DE LOS SERVICIOS</option>
+                    <option value="desarrollo">DESARROLLO DE SOFTWARE</option>
+                    <option value="automatizacion">AUTOMATIZACIÓN INDUSTRIAL</option>
+                    <option value="ciberseguridad">CIBERSEGURIDAD EMPRESARIAL</option>
+                    <option value="bigData">ANÁLISIS DE DATOS Y BIG DATA</option>
+                    <option value="ia">DESARROLLO DE INTELIGENCIA ARTIFICIAL</option>
+                </select>
+
+
+                <div style=" display: flex; gap: 25px; margin-top: 10;">
+                    <input type="text" placeholder="Nombre del Proyecto" class="relleno_formulario" required>
+                    <input type="email" placeholder="Correo electrónico" class="relleno_formulario" required>
+                    <input type="date" placeholder="Fecha de Solicitud" class="relleno_formulario" required>
+                </div>
+                <input type="text" style="margin-top: 10; width: 650;" placeholder="Descripción del Proyecto"
+                    class="relleno_formulario2" required>
+                <button type="submit" style="padding: 10px 20px; border: none; border-radius: 5px; 
+                               background-color: #fff; color: #3498db; cursor: pointer;
+                               margin-top: 10;">
+                    Enviar
+                </button>
+            </form>
+        </div>
+
+    </nav>
+
+    <footer class="footer_inicio">
+        <div class="div_footer">
+            <div style="color: white; display: flex; align-items: center; justify-content: center;">
+                <h2>¡Suscríbete para recibir nuestras ofertas!</h2>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 15px; color: white;">
+                <p>Benefíciate antes que nadie de nuestras promociones. Entérate de todas las novedades</p>
+            </div>
+            <div>
+                <form>
+                    <div
+                        style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 20px;">
+                        <input type="text" placeholder="Nombre y apellidos" class="relleno_formulario" required>
+                        <input type="email" placeholder="Correo electrónico" class="relleno_formulario" required>
+                        <button type="submit"
+                            style="padding: 10px 20px; border: none; border-radius: 5px; background-color: #fff; color: #3498db; cursor: pointer;">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
