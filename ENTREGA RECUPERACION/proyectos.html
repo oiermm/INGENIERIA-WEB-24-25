@@ -1,33 +1,176 @@
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    </head>
-<body>
-   
-    <header style="position: relative;">
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Proyectos - TechRevolution</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+</head>
+
+<body>
+
+    <header style="position: relative;">
         <div>
-            <img src="img/banner2.jpg" style="width: 100%; height: 230px; display: block;">
-        </div>      
-    
+            <img src="img/banner2.jpg" style="width: 100%; height: 230px; display: block;" alt="Banner TechRevolution">
+        </div>
+
         <div style="position: absolute; top: 5%; left: 36%; color: white; text-align: center;">
             <h1 style="font-size: 3em;">TechRevolution</h1>
             <p>Innovación tecnológica para un futuro mejor</p>
         </div>
-    
-        <div style="position: absolute; top: 80%; left: 28%; display: flex; justify-content: center; align-items: center; gap: 50px;">
-            <a href="servicios.html">
-                <button style="color: white; background-color: #007bff; padding: 10px 20px; border-radius: 5px; border: none; width: 150px;">SERVICIOS</button>
-            </a>
-            <a href="proyectos.html">
-                <button style="color: white; background-color: #007bff; padding: 10px 20px; border-radius: 5px; border: none; width: 150px;">PROYECTOS</button>
-            </a>
-            <a href="historia.html">
-                <button style="color: white; background-color: #007bff; padding: 10px 20px; border-radius: 5px; border: none; width: 150px;">HISTORIA</button>
-            </a>
-        </div>        
-    
-    </header>  
+
+        <div
+            style="position: absolute; top: 80%; left: 28%; display: flex; justify-content: center; align-items: center; gap: 50px;">
+            <a href="inicio.html"><button
+                    style="color: white; background-color: #007bff; padding: 10px 20px; border-radius: 5px; border: none; width: 150px;">INICIO</button></a>
+            <a href="servicios.html"><button
+                    style="color: white; background-color: #007bff; padding: 10px 20px; border-radius: 5px; border: none; width: 150px;">SERVICIOS</button></a>
+            <a href="historia.html"><button
+                    style="color: white; background-color: #007bff; padding: 10px 20px; border-radius: 5px; border: none; width: 150px;">HISTORIA</button></a>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL DE PROYECTOS -->
+    <div style="max-width: 900px; margin: 40px auto; padding: 0 20px; text-align: left;">
+        <h2 style="font-size: 2.5em; color: #007bff; margin-bottom: 40px; text-align: center;">Nuestros Proyectos</h2>
+
+        <!-- Proyecto 1 -->
+        <div
+            style="background-color: rgb(1, 107, 168); color: white; border-radius: 20px; padding: 25px 30px; margin-bottom: 40px; box-sizing: border-box;">
+            <div style="display: flex; gap: 100px; align-items: center; justify-content: center;">
+                <h2 style="text-align: center; margin-bottom: 20px;">Automatización Industrial</h2>
+                <img src="img/automas.jpg" alt="Proyecto Automatización Industrial"
+                    style="height: 200px; object-fit: cover; border-radius: 15px; margin-bottom: 20px;">
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <p><strong>🏢 Empresa:</strong> Industrias TechnoAutomation S.A.</p>
+                <p><strong>📅 Fecha:</strong> Enero 2023 - Agosto 2023</p>
+                <p><strong>📌 Objetivo:</strong> Optimizar y controlar las líneas de producción para aumentar eficiencia
+                    y reducir errores.</p>
+                <p><strong>🛠️ Tecnologías utilizadas:</strong> PLCs, sensores industriales, actuadores, y software
+                    SCADA para supervisión y control en tiempo real.</p>
+                <p><strong>🔒 Funcionalidades implementadas:</strong> Control automático de maquinaria, monitoreo
+                    remoto, alarmas y reportes de fallos.</p>
+                <p><strong>⏱️ Tiempo de desarrollo:</strong> 8 meses desde análisis y diseño hasta puesta en marcha y
+                    capacitación del personal.</p>
+                <p><strong>👥 Equipo involucrado:</strong> 1 Ingeniero de automatización, 2 técnicos de hardware, 2
+                    desarrolladores de software SCADA.</p>
+                <p><strong>📈 Resultados obtenidos:</strong> Incremento del 25% en productividad y reducción de paros no
+                    planificados en un 30%.</p>
+            </div>
+        </div>
+
+        <!-- Proyecto 2 -->
+        <div
+            style="background-color: rgb(1, 107, 168); color: white; border-radius: 20px; padding: 25px 30px; margin-bottom: 40px; box-sizing: border-box;">
+            <div style="display: flex; gap: 100px; align-items: center; justify-content: center;">
+                <h2 style="text-align: center; margin-bottom: 20px;">Casa Inteligente</h2>
+                <img src="img/app_casa.png" alt="Proyecto Aplicación IoT"
+                    style="height: 200px; object-fit: cover; border-radius: 15px; margin-bottom: 20px;">
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <p><strong>🏢 Empresa:</strong> SmartHome Solutions Ltd.</p>
+                <p><strong>📅 Fecha:</strong> Marzo 2022 - Julio 2022</p>
+                <p><strong>📌 Objetivo:</strong> Facilitar el control remoto y automatización de dispositivos domésticos
+                    para mejorar la comodidad y seguridad.</p>
+                <p><strong>🛠️ Tecnologías utilizadas:</strong> Protocolos MQTT y Wi-Fi, aplicaciones móviles nativas
+                    con interfaces intuitivas y seguras.</p>
+                <p><strong>🔒 Funcionalidades implementadas:</strong> Control de luces, termostatos, cámaras de
+                    seguridad y sensores ambientales.</p>
+                <p><strong>⏱️ Tiempo de desarrollo:</strong> 5 meses incluyendo desarrollo, pruebas piloto y ajustes
+                    basados en feedback.</p>
+                <p><strong>👥 Equipo involucrado:</strong> 2 desarrolladores móviles, 1 especialista en IoT, 1 diseñador
+                    UX/UI.</p>
+                <p><strong>📈 Resultados obtenidos:</strong> Aumento de la satisfacción del usuario y reducción del
+                    consumo energético en hogares piloto.</p>
+            </div>
+        </div>
+
+        <!-- Proyecto 3 -->
+        <div
+            style="background-color: rgb(1, 107, 168); color: white; border-radius: 20px; padding: 25px 30px; margin-bottom: 40px; box-sizing: border-box;">
+            <div style="display: flex; gap: 100px; align-items: center; justify-content: center;">
+                <h2 style="text-align: center; margin-bottom: 20px;">Aula virtual</h2>
+                <img src="img/e-lerning.jpg" alt="Proyecto Plataforma e-learning"
+                    style="height: 200px; object-fit: cover; border-radius: 15px; margin-bottom: 20px;">
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <p><strong>🏢 Empresa:</strong> EduTech Global</p>
+                <p><strong>📅 Fecha:</strong> Junio 2021 - Noviembre 2021</p>
+                <p><strong>📌 Objetivo:</strong> Proveer una plataforma educativa online con cursos personalizados y
+                    seguimiento detallado del progreso de los estudiantes.</p>
+                <p><strong>🛠️ Tecnologías utilizadas:</strong> Desarrollo web con backend en Node.js, base de datos SQL
+                    y frameworks frontend modernos.</p>
+                <p><strong>🔒 Funcionalidades implementadas:</strong> Gestión de cursos, evaluaciones, foros, reportes
+                    de avance y certificados digitales.</p>
+                <p><strong>⏱️ Tiempo de desarrollo:</strong> 6 meses desde análisis y diseño hasta lanzamiento y soporte
+                    inicial.</p>
+                <p><strong>👥 Equipo involucrado:</strong> 3 desarrolladores fullstack, 1 diseñador instruccional, 1
+                    especialista en QA.</p>
+                <p><strong>📈 Resultados obtenidos:</strong> Incremento en la tasa de retención de estudiantes y mejores
+                    calificaciones en cursos piloto.</p>
+            </div>
+        </div>
+
+        <!-- Proyecto 4 -->
+        <div
+            style="background-color: rgb(1, 107, 168); color: white; border-radius: 20px; padding: 25px 30px; margin-bottom: 40px; box-sizing: border-box;">
+            <div style="display: flex; gap: 100px; align-items: center; justify-content: center;">
+                <h2 style="text-align: center; margin-bottom: 20px;">App de salud y bienestar</h2>
+                <img src="img/app_bienestar.jpg"
+                    style="height: 200px; object-fit: cover; border-radius: 15px; margin-bottom: 20px;">
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <p><strong>🏢 Empresa:</strong> WellnessTech Innovations</p>
+                <p><strong>📅 Fecha:</strong> Febrero 2022 - Agosto 2022</p>
+                <p><strong>📌 Objetivo:</strong> Promover hábitos saludables y seguimiento personalizado de la actividad
+                    física mediante tecnología móvil.</p>
+                <p><strong>🛠️ Tecnologías utilizadas:</strong> Integración con sensores wearables, desarrollo móvil
+                    multiplataforma e inteligencia artificial para recomendaciones.</p>
+                <p><strong>🔒 Funcionalidades implementadas:</strong> Monitoreo de ejercicios, planes personalizados,
+                    notificaciones motivacionales y análisis de datos en tiempo real.</p>
+                <p><strong>⏱️ Tiempo de desarrollo:</strong> 7 meses incluyendo desarrollo, pruebas con usuarios y
+                    optimización continua.</p>
+                <p><strong>👥 Equipo involucrado:</strong> 2 desarrolladores móviles, 1 experto en IA, 1 nutricionista
+                    consultora.</p>
+                <p><strong>📈 Resultados obtenidos:</strong> Mejora en la adherencia a rutinas saludables y alta
+                    valoración de los usuarios en tiendas de apps.</p>
+            </div>
+        </div>
+
+        <!-- Proyecto 5 (original) -->
+        <div
+            style="background-color: rgb(1, 107, 168); color: white; border-radius: 20px; padding: 25px 30px; margin-bottom: 40px; box-sizing: border-box;">
+            <div style="display: flex; gap: 100px; align-items: center; justify-content: center;">
+                <h2 style="text-align: center; margin-bottom: 20px;">Red Social Corporativa</h2>
+                <img src="img/red_social.jpg" alt="Red Social Corporativa"
+                    style="height: 200px; object-fit: cover; border-radius: 15px; margin-bottom: 20px;">
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <p><strong>🏢 Empresa:</strong> ConnectCorp</p>
+                <p><strong>📅 Fecha:</strong> Septiembre 2023 - Enero 2024</p>
+                <p><strong>📌 Objetivo:</strong> Mejorar la comunicación interna y fomentar la colaboración entre
+                    empleados mediante una plataforma social corporativa.</p>
+                <p><strong>🛠️ Tecnologías utilizadas:</strong> Desarrollo web con HTML5, CSS3, JavaScript, y frameworks
+                    como React para la interfaz de usuario y Node.js para el backend.</p>
+                <p><strong>🔒 Funcionalidades implementadas:</strong> Publicaciones, comentarios, mensajería
+                    instantánea, gestión documental y perfiles de usuario personalizados.</p>
+                <p><strong>⏱️ Tiempo de desarrollo:</strong> 4 meses, incluyendo fases de análisis, diseño, desarrollo y
+                    pruebas, con actualizaciones periódicas post-lanzamiento.</p>
+                <p><strong>👥 Equipo involucrado:</strong> 1 Project Manager, 2 Desarrolladores Frontend, 2
+                    Desarrolladores Backend, 1 Diseñador UX/UI.</p>
+                <p><strong>📈 Resultados obtenidos:</strong> Aumento del 35% en la interacción entre departamentos y
+                    reducción del 20% en el uso del correo electrónico interno.</p>
+            </div>
+        </div>
+    </div>
+
 
     <footer class="footer_inicio">
         <div class="div_footer">
@@ -52,7 +195,7 @@
                 </form>
             </div>
     </footer>
-    
+
 </body>
 
 </html>
