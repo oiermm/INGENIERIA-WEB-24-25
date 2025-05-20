@@ -64,9 +64,8 @@ table {
 .formulario {
     display: flex;
     flex-direction: column;
-    /* para que el select y los inputs estén en columna */
     align-items: center;
-    /* centrado horizontal */
+    height: 200px;
 }
 
 .relleno_formulario {
